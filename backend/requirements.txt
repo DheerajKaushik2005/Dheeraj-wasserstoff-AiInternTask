@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-langchain>=0.0.200
-openai
-chromadb
-pytesseract
-pillow
