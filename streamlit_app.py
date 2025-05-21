@@ -27,7 +27,7 @@ if uploaded_files:
         with open(file_path, "wb") as f:
             f.write(file.getvalue())
 
-    st.success("✅ Images uploaded successfully.")
+    st.success("✅ Document uploaded successfully.")
     st.write("🔍 Extracting text...")
     ingest.process_files("data/input_images", "data/text_outputs")
 
