@@ -55,7 +55,8 @@ async def ask(request: QueryRequest):
     return {"answer": answer}
 
 
-
+#this is command to run backend app
+# To run the app, use the command below in your terminal:
 #uvicorn backend.app.services.backend:app --reload
 
 

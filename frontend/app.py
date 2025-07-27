@@ -74,7 +74,7 @@ uploaded_file = st.file_uploader("Upload PDF", type=["pdf"])
 if uploaded_file:
     with open(f"temp/{uploaded_file.name}", "wb") as f:
         f.write(uploaded_file.read())
-    st.success("✅ File uploaded!")
+    st.success("File uploaded!")
 
     # Input field for user question
     question = st.text_input("Ask a question about the document:")
@@ -94,11 +94,12 @@ if uploaded_file:
                         answer = response.json().get("answer", "No answer found.")
                         st.markdown(f"**Answer:** {answer}")
                     else:
-                        st.error(f"❌ Error: {response.status_code} - {response.text}")
+                        st.error(f" Error: {response.status_code} - {response.text}")
                 except Exception as e:
-                    st.error(f"❌ Failed to connect to backend: {e}")
+                    st.error(f" Failed to connect to backend: {e}")
         else:
-            st.warning("⚠️ Please enter a question.")
-
+            st.warning(" Please enter a question.")
+#this is command to run streamlit app
+# To run the app, use the command below in your terminal:
 #streamlit run frontend/app.py
 
