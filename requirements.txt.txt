@@ -1,0 +1,29 @@
+# Backend
+fastapi==0.110.0
+uvicorn==0.27.1
+
+# OCR
+pytesseract==0.3.10
+Pillow==10.3.0
+opencv-python==4.9.0.80
+
+# PDF & Image processing
+PyMuPDF==1.23.12  # For reading PDF documents
+
+# Embedding & Semantic Search
+sentence-transformers==2.6.1
+faiss-cpu==1.7.4  # Use faiss-gpu if using GPU
+
+# Data Handling
+numpy==1.26.4
+pandas==2.2.1
+
+# Frontend
+streamlit==1.35.0
+
+# Optional - For CORS in FastAPI
+fastapi[all]==0.110.0
+
+# General Utilities
+tqdm==4.66.2
+python-multipart==0.0.9  # If uploading files via FastAPI
